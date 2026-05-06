@@ -98,7 +98,10 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.innerText = 'Enviando petición...';
             btn.disabled = true;
 
-            emailjs.sendForm('service_d5u5t3c', 'template_ossqao5', this)
+            const sendClientEmail = emailjs.sendForm('service_d5u5t3c', 'template_ossqao5', this);
+            const sendAdminEmail = emailjs.sendForm('service_d5u5t3c', 'template_gb5ajxl', this);
+
+            Promise.all([sendClientEmail, sendAdminEmail])
                 .then(function() {
                     btn.innerText = '¡Solicitud Recibida con Éxito!';
                     btn.style.backgroundColor = '#4CAF50';
@@ -113,7 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         btn.style.color = '';
                         btn.disabled = false;
                     }, 5000);
-                }, function(error) {
+                })
+                .catch(function(error) {
                     btn.innerText = 'Falló el envío. Intente por WhatsApp.';
                     console.error('FAILED...', error);
                     setTimeout(() => {
