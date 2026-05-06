@@ -280,12 +280,7 @@
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" action="https://formsubmit.co/yeimysuarez184@gmail.com" method="POST">
-                        <!-- FormSubmit Configuration -->
-                        <input type="hidden" name="_subject" value="Nueva Solicitud de Asesoría - Suárez & Abogados">
-                        <input type="hidden" name="_autoresponse" value="Estimado/a cliente. Hemos recibido exitosamente su solicitud. El equipo jurídico de Suárez & Abogados analizará su caso y se pondrá en contacto pronto. Su tranquilidad es nuestra prioridad.">
-                        <input type="hidden" name="_template" value="box">
-                        
+                    <form id="contact-form" class="contact-form">
                         <input type="text" name="nombre" placeholder="Nombre completo" required>
                         <input type="tel" name="telefono" placeholder="Número celular / WhatsApp" required>
                         <input type="email" name="email" placeholder="Su correo electrónico" required>
@@ -334,6 +329,13 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("Yixbzt_sWL2E5Ts_d");
+       })();
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

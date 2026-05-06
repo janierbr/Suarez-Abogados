@@ -87,4 +87,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // EmailJS Form Submission
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const btn = contactForm.querySelector('button[type="submit"]');
+            const originalText = btn.innerText;
+            btn.innerText = 'Enviando petición...';
+            btn.disabled = true;
+
+            emailjs.sendForm('service_d5u5t3c', 'template_ossqao5', this)
+                .then(function() {
+                    btn.innerText = '¡Solicitud Recibida con Éxito!';
+                    btn.style.backgroundColor = '#4CAF50';
+                    btn.style.border = '1px solid #4CAF50';
+                    btn.style.color = 'white';
+                    contactForm.reset();
+                    
+                    setTimeout(() => {
+                        btn.innerText = originalText;
+                        btn.style.backgroundColor = '';
+                        btn.style.border = '';
+                        btn.style.color = '';
+                        btn.disabled = false;
+                    }, 5000);
+                }, function(error) {
+                    btn.innerText = 'Falló el envío. Intente por WhatsApp.';
+                    console.error('FAILED...', error);
+                    setTimeout(() => {
+                        btn.innerText = originalText;
+                        btn.disabled = false;
+                    }, 4000);
+                });
+        });
+    }
+
 });
