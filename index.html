@@ -35,8 +35,11 @@
                     <li><a href="#process" class="nav-link">Cómo Ayudamos</a></li>
                     <li><a href="#services" class="nav-link">Especialidades</a></li>
                 </ul>
-                <div class="nav-actions">
-                    <a href="#contact" class="btn btn-primary-outline">Evaluación de Caso</a>
+                <div class="nav-actions" style="display: flex; align-items: center; gap: 1.2rem;">
+                    <a href="https://wa.me/573000000000" target="_blank" class="nav-social" style="font-size: 1.4rem; color: var(--gold); transition: var(--transition);" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="nav-social" style="font-size: 1.4rem; color: var(--gold); transition: var(--transition);" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" class="nav-social" style="font-size: 1.4rem; color: var(--gold); transition: var(--transition);" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#contact" class="btn btn-primary-outline" style="margin-left: 0.5rem;">Evaluación de Caso</a>
                 </div>
             </nav>
             <!-- Mobile Menu Toggle -->
@@ -46,10 +49,12 @@
         </div>
     </header>
 
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/573000000000" class="floating-wa" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+    <!-- Floating Socials -->
+    <div class="floating-social-stack">
+        <a href="https://wa.me/573000000000" class="floating-icon wa" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://instagram.com" class="floating-icon ig" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://facebook.com" class="floating-icon fb" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    </div>
 
     <!-- Hero Section (Split Layout) -->
     <section class="hero" id="hero">
@@ -60,12 +65,12 @@
                 <p class="hero-desc">Expertos en todas las ramas judiciales (Penal, Laboral, Civil). Le guiamos en cada etapa de su proceso legal para asegurar resultados excepcionales.</p>
                 <div class="hero-buttons">
                     <a href="#services" class="btn btn-primary">Ver Especialidades <i class="fa-solid fa-arrow-right"></i></a>
-                    <a href="#contact" class="btn btn-text">Agendar Asesoría</a>
+                    <a href="#contact" class="btn-text">AGENDAR ASESORÍA <i class="fa-solid fa-arrow-right-long" style="font-size: 0.9rem;"></i></a>
                 </div>
                 <!-- Mini Stats -->
                 <div class="hero-micro-stats">
                     <div class="micro-stat">
-                        <strong>15+</strong>
+                        <strong>10+</strong>
                         <span>Años de<br>Experiencia</span>
                     </div>
                     <div class="micro-divider"></div>
@@ -80,13 +85,13 @@
                 <div class="swiper heroSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')"></div>
+                            <div class="slide-img" style="background-image: url('img/imagen1.png')"></div>
                             <div class="slide-overlay">
                                 <h3>Defensa Implacable</h3>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="slide-img" style="background-image: url('https://images.unsplash.com/photo-1505664159858-86866635cba9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80')"></div>
+                            <div class="slide-img" style="background-image: url('img/imagen2.png')"></div>
                             <div class="slide-overlay">
                                 <h3>Asesoría Corporativa</h3>
                             </div>
@@ -157,7 +162,7 @@
 
             <div class="bento-grid">
                 <!-- Penal -->
-                <div class="bento-item bento-large" style="background-image: linear-gradient(to top, rgba(28,28,28,0.95), rgba(28,28,28,0.4)), url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');" data-aos="zoom-in">
+                <div class="bento-item bento-large" style="background-image: linear-gradient(to top, rgba(28,28,28,0.85), rgba(28,28,28,0.4)), url('https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');" data-aos="zoom-in">
                     <div class="bento-content">
                         <div class="bento-icon"><i class="fa-solid fa-scale-unbalanced"></i></div>
                         <h3>Derecho Penal</h3>
@@ -165,35 +170,35 @@
                     </div>
                 </div>
                 <!-- Civil -->
-                <div class="bento-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="bento-content dark-bg">
-                        <div class="bento-icon"><i class="fa-solid fa-house-chimney"></i></div>
-                        <h3>Derecho Civil</h3>
-                        <p>Contratos, divorcios, propiedades y reclamaciones. Protección a su patrimonio familiar.</p>
-                    </div>
-                </div>
-                <!-- Laboral -->
-                <div class="bento-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="bento-content light-bg">
-                        <div class="bento-icon"><i class="fa-solid fa-users-gear"></i></div>
-                        <h3>Derecho Laboral</h3>
-                        <p>Despidos, acoso, pensiones y asesoría integral para empresas. Dignificamos su trabajo.</p>
+                <div class="bento-item" style="background-image: linear-gradient(to top, rgba(171, 142, 102, 0.85), rgba(171, 142, 102, 0.5)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bento-content text-white">
+                        <div class="bento-icon" style="background: rgba(255,255,255,0.2); color: #fff;"><i class="fa-solid fa-people-roof"></i></div>
+                        <h3 style="color: #fff;">Derecho Civil</h3>
+                        <p style="color: #fff;">Contratos, divorcios, propiedades y reclamaciones. Protección a su patrimonio familiar.</p>
                     </div>
                 </div>
                 <!-- Comercial -->
-                <div class="bento-item" data-aos="fade-left" data-aos-delay="300">
-                    <div class="bento-content dark-bg">
+                <div class="bento-item" style="background-image: linear-gradient(to top, rgba(28,28,28,0.85), rgba(28,28,28,0.4)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');" data-aos="fade-left" data-aos-delay="300">
+                    <div class="bento-content">
                         <div class="bento-icon"><i class="fa-solid fa-building"></i></div>
                         <h3>Comercial y Corporativo</h3>
                         <p>Estructuración de empresas, revisión de contratos, litigios entre socios.</p>
                     </div>
                 </div>
+                <!-- Laboral -->
+                <div class="bento-item bento-medium" style="background-image: linear-gradient(to right, rgba(28,28,28,0.85), rgba(28,28,28,0.4)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bento-content">
+                        <div class="bento-icon"><i class="fa-solid fa-users-gear"></i></div>
+                        <h3>Derecho Laboral</h3>
+                        <p>Despidos, acoso, pensiones y asesoría integral para empresas. Dignificamos su trabajo.</p>
+                    </div>
+                </div>
                 <!-- Administrativo -->
-                <div class="bento-item bento-medium" style="background-image: linear-gradient(to top, rgba(197,168,128,0.9), rgba(197,168,128,0.7)), url('https://images.unsplash.com/photo-1603796846097-bee99e4a601f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');" data-aos="fade-up">
-                    <div class="bento-content text-dark">
-                        <div class="bento-icon"><i class="fa-solid fa-landmark"></i></div>
-                        <h3>Público y Constitucional</h3>
-                        <p>Tutelas, demandas al estado y procesos administrativos sancionatorios.</p>
+                <div class="bento-item bento-medium" style="background-image: linear-gradient(to top, rgba(171, 142, 102, 0.85), rgba(171, 142, 102, 0.5)), url('https://images.unsplash.com/photo-1497384401032-2182d2687715?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');" data-aos="fade-up">
+                    <div class="bento-content text-white">
+                        <div class="bento-icon" style="background: rgba(255,255,255,0.2); color: #fff;"><i class="fa-solid fa-landmark"></i></div>
+                        <h3 style="color: #fff;">Público y Constitucional</h3>
+                        <p style="color: #fff;">Tutelas, demandas al estado y procesos administrativos sancionatorios.</p>
                     </div>
                 </div>
             </div>
@@ -204,13 +209,13 @@
     <section class="about" id="about">
         <div class="section-container">
             <div class="about-flex">
-                <div class="about-image-wrapper" data-aos="fade-right">
-                    <img src="https://images.unsplash.com/photo-1593115057322-e94bfa3a4eb1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Reunión Suárez Abogados">
+                <div class="about-image-wrapper" data-aos="fade-right" style="display: flex; align-items: center; justify-content: center; background: rgba(171, 142, 102, 0.05); border-radius: 20px; min-height: 450px; position: relative;">
+                    <i class="fa-solid fa-scale-balanced" style="font-size: 8rem; color: var(--gold); opacity: 0.6;"></i>
                     <div class="floating-box" data-aos="fade-up" data-aos-delay="300">
-                        <i class="fa-solid fa-award"></i>
+                        <i class="fa-solid fa-handshake"></i>
                         <div>
-                            <h4>Excelencia Legal</h4>
-                            <p>Firma reconocida 2026</p>
+                            <h4>Trato Humano</h4>
+                            <p>Usted es nuestra prioridad.</p>
                         </div>
                     </div>
                 </div>
@@ -240,23 +245,51 @@
                             <i class="fa-solid fa-phone"></i>
                             <div>
                                 <span>Llámenos hoy</span>
-                                <strong>+57 300 000 0000</strong>
+                                <strong>+57 3203394838</strong>
                             </div>
                         </div>
                         <div class="cd-item">
                             <i class="fa-solid fa-location-dot"></i>
                             <div>
                                 <span>Visite nuestra oficina</span>
-                                <strong>Edif. Empresarial, Piso 4, Ciudad.</strong>
+                                <strong>Calle 7 #1A-47, Pitalito, Huila.</strong>
                             </div>
+                        </div>
+                        <div class="cd-item">
+                            <i class="fa-solid fa-share-nodes"></i>
+                            <div>
+                                <span>Nuestras Redes</span>
+                                <div style="display: flex; gap: 1.2rem; margin-top: 5px;">
+                                    <a href="https://wa.me/573000000000" target="_blank" title="WhatsApp" style="font-size: 1.4rem; color: var(--black); transition: color 0.3s;" onmouseover="this.style.color='#25d366'" onmouseout="this.style.color='var(--black)'"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="https://instagram.com" target="_blank" title="Instagram" style="font-size: 1.4rem; color: var(--black); transition: color 0.3s;" onmouseover="this.style.color='#E1306C'" onmouseout="this.style.color='var(--black)'"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://facebook.com" target="_blank" title="Facebook" style="font-size: 1.4rem; color: var(--black); transition: color 0.3s;" onmouseover="this.style.color='#1877f2'" onmouseout="this.style.color='var(--black)'"><i class="fa-brands fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cd-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <span>Correo Electrónico</span>
+                                <strong>yeimysuarez184@gmail.com</strong>
+                            </div>
+                        </div>
+                        <!-- Embedded Google Map -->
+                        <div class="map-container" style="margin-top: 1.5rem; border-radius: 8px; overflow: hidden; height: 180px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127599.45892520658!2d-76.13620242131976!3d1.854089196944358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e250917db4fc705%3A0xc6cbff1ad1d1645e!2sPitalito%2C%20Huila!5e0!3m2!1sen!2sco!4v1714578500200!5m2!1sen!2sco" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
-                    <form class="contact-form">
-                        <input type="text" placeholder="Nombre completo" required>
-                        <input type="tel" placeholder="Número celular / WhatsApp" required>
-                        <select required>
+                    <form class="contact-form" action="https://formsubmit.co/yeimysuarez184@gmail.com" method="POST">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="Nueva Solicitud de Asesoría - Suárez & Abogados">
+                        <input type="hidden" name="_autoresponse" value="Estimado/a cliente. Hemos recibido exitosamente su solicitud. El equipo jurídico de Suárez & Abogados analizará su caso y se pondrá en contacto pronto. Su tranquilidad es nuestra prioridad.">
+                        <input type="hidden" name="_template" value="box">
+                        
+                        <input type="text" name="nombre" placeholder="Nombre completo" required>
+                        <input type="tel" name="telefono" placeholder="Número celular / WhatsApp" required>
+                        <input type="email" name="email" placeholder="Su correo electrónico" required>
+                        <select name="asunto" required>
                             <option value="" disabled selected>Asunto jurídico (Ej: Penal, Laboral...)</option>
                             <option value="penal">Derecho Penal</option>
                             <option value="laboral">Derecho Laboral</option>
@@ -283,9 +316,9 @@
                 </a>
                 <p>Protegiendo derechos, garantizando justicia.</p>
                 <div class="socials">
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://wa.me/573000000000" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
                 </div>
             </div>
             <div class="footer-links">
